@@ -1,5 +1,5 @@
 asgiref==3.6.0
-boto3==1.24.69
+boto3==1.26.0
 botocore==1.27.69
 certifi==2022.6.15
 charset-normalizer==2.1.0
@@ -8,7 +8,6 @@ dj3-cloudinary-storage==0.0.6
 Django==4.2.10
 django-storages==1.14.2
 dlib==19.24.2
-django-storages==1.12.3
 gunicorn==20.1.0
 idna==3.3
 jmespath==1.0.1
@@ -22,6 +21,6 @@ requests==2.28.1
 s3transfer==0.6.0
 six==1.16.0
 sqlparse==0.4.2
-tzdata==2.21.5
+tzdata==2022.6
 urllib3==1.26.10
 whitenoise==6.2.0
