@@ -1,0 +1,152 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome {{name}}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{%static 'css\style.css'%}">
+    <link rel="icon" href="{%static 'img\logo\NTI.png'%}" type="image/x-icon">
+
+
+</head>
+<style>
+
+</style>
+<body>
+    <div class="main">
+        <nav>
+            <img src="{%static 'img\logo\NTI.png'%}" alt="" width="70" height="70">
+            <div class="nav-part2">
+                <h4><a href="/" style="text-decoration: none;"><span style="color: rgb(0, 0, 0);">Home</span></a></h4>
+                <a href="Courses" style="text-decoration: none;"><h4>Courses</h4></a>
+                <a href="account" style="text-decoration: none;"><h4>Account</h4></a>
+                <button><a href="/login" style="text-decoration: none;display:block;"><span style="color: aliceblue;font-weight:bolder;font-size:13px;display:block">Login</span></a></button>
+                <i class="ri-menu-3-fill"></i>
+
+        </nav>
+        <div class="content">
+            <div class="left" >
+                <h1>Learn from the <span>Coolest</span> <span>Coding</span> from <span>India</span>.</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolores distinctio ducimus, alias aperiam ab corrupti repellendus voluptatum. Omnis dolorum totam itaque ratione autem, deserunt vel sit et. Assumenda, optio!
+            </p>
+            <button>Explore Now</button>
+        </div>
+            <div class="right">
+                <img src="{%static 'img\logo\students.jpg'%}" alt="LOGO">
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <section class="section1">
+        <div class="navbar">
+            <a href="#" onclick="showDescription('JavaScript'); return false;" class="active">JavaScript</a>
+            <a href="#" onclick="showDescription('Python'); return false;">Python</a>
+            <a href="#" onclick="showDescription('Java'); return false;">Java</a>
+            <a href="#" onclick="showDescription('C'); return false;">C</a>
+            <a href="#" onclick="showDescription('C++'); return false;">C++</a>
+            <a href="#" onclick="showDescription('C#'); return false;">C#</a>
+            <a href="#" onclick="showDescription('TypeScript'); return false;">TypeScript</a>
+            <a href="#" onclick="showDescription('PHP'); return false;">PHP</a>
+            <a href="#" onclick="showDescription('Swift'); return false;">Swift</a>
+            <a href="#" onclick="showDescription('Kotlin'); return false;">Kotlin</a>
+            <a href="#" onclick="showDescription('SQL'); return false;">SQL</a>
+          </div>
+          <div class="languageDescriptionContainer" id="languageDESIMG">
+            <div class="description-container" id="languageDescriptionContainer">
+              <div class="description" id="languageDescription">
+              </div>
+            </div>
+          </div>          
+    </section>
+
+    <section class="section2">
+        <div class="card-container" id="card-container">
+            <div class="card">
+                <img src="{%static 'img\teachers\15.gif'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 1</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde odit vitae, explicabo non numquam nihil et id eius esse officiis in distinctio dolor perferendis, facilis excepturi quis modi ab?</p>
+            </div>
+            <div class="card">
+                <img src="{%static 'img\teachers\1.gif'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 2</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error officiis voluptates quae commodi adipisci ipsam et enim. Iusto ipsum sit accusantium soluta quo, quas ducimus labore explicabo vitae voluptas?</p>
+            </div>
+            <div class="card">
+                <img src="{%static 'img\teachers\14.jpeg'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 3</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores nisi in doloremque cupiditate. Sapiente illum fuga exercitationem dolorum nam nostrum magni, blanditiis magnam possimus sequi vitae aut repudiandae?</p>
+            </div>
+            <div class="card">
+                <img src="{%static 'img\teachers\9.jpeg'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 4</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores nisi in doloremque cupiditate. Sapiente illum fuga exercitationem dolorum nam nostrum magni, blanditiis magnam possimus sequi vitae aut repudiandae?</p>
+            </div>
+            <div class="card">
+                <img src="{%static 'img\teachers\18.gif'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 5</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores nisi in doloremque cupiditate. Sapiente illum fuga exercitationem dolorum nam nostrum magni, blanditiis magnam possimus sequi vitae aut repudiandae?</p>
+            </div>
+            <div class="card">
+                <img src="{%static 'img\teachers\7.jpg'%}" alt="Placeholder Image" height="137vh">
+                <h3>Name 6</h3><h3>Discription:&downarrow;</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores nisi in doloremque cupiditate. Sapiente illum fuga exercitationem dolorum nam nostrum magni, blanditiis magnam possimus sequi vitae aut repudiandae?</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="section3">
+        <div class="left-content" >
+            <h1>Get <span>SCHOLORSHIP</span>
+            <h1>Exciting Opportunity:</h1><h1><span>90% Scholarship </span> Offer!</h1>
+            <h6>
+                <p>
+                    We are thrilled to announce an exclusive scholarship opportunity
+                    for aspiring students who dream of pursuing higher education but
+                    face financial constraints. Our institute is proud to extend a 
+                    generous 90% scholarship to eligible candidates, enabling them to
+                    embark on their academic journey with confidence and ease. 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sunt
+                     mollitia ipsa! Placeat soluta architecto eligendi aperiam quos nemo
+                      consequuntur voluptates temporibus, adipisci odit recusandae culpa.
+                       Ipsam amet tempora cumque.
+                </p>
+            </h6>
+                <button>GET</button>
+
+        </div>
+    </section>
+    <section class="section4">
+        <div class="certify">
+            <img src='{%static "img\certificate\Certificate of Achievement.png" %}' alt="cerificate">
+            <a href="login" style="text-decoration: none;"><span style="font-size:larger">&#128274;</span></a>
+        </div>
+    </section>
+    <script src="{% static 'js/js.js' %}"></script>
+    <footer class="footer">
+        <div class="container">            
+            <div class="address col-md-3">
+                <p><span>&#x1F4CD;</span> Lig 2\21\422, Nehru, Nagar,</p>
+                <p>Huzur, 486001</p>
+                <p>Rewa, Madhya Pradesh</p>
+                <p>INDIA</p>
+            </div>
+            <div class="col-md-3">
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="https://ntitechacademy.com/">https://ntitechacademy.com/</a></li>
+                    <li><a href="https://newtalentinfotech.com/">https://newtalentinfotech.com/</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

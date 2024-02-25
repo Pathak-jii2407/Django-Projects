@@ -1,0 +1,475 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html,body,section{
+    height: 100%;
+    width: 100%;
+}
+.blank{
+    height: 100px;
+    width: 100%;
+}
+
+.wish{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+}
+.wish h3{
+    font-size:25px;
+    font-weight:600;
+    padding-left:67%;
+    padding-top:43%;
+}
+.wish span{
+    color:#CB3E00;
+}
+
+.main,.teachers{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid rgb(107, 115, 107);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw ;
+}
+.nav-part2{
+    display: flex;
+    gap:4vw;
+    align-items: center;
+}
+nav img{
+    border-radius: 10%;
+}
+nav h4{
+    font-size: 1.1vw;
+    font-weight: 400;
+
+}
+nav i{
+    font-size: 2.5vw;
+    font-weight: 800;
+    display: none;
+}
+
+nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #CB3E00;
+    color: aliceblue;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 3.9vw;
+    line-height: 4.4vw;
+    font-weight: 900;
+}
+.left h1 span{
+    color: #CB3E00;
+}
+.left p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+button{
+    font-size: 1.1vw;
+    padding: 1vw 2vw;
+    background-color: #CB3E00;
+    color: aliceblue;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+.right img{
+    height: 90%;
+    width: 90%;
+}
+
+.right img{
+    border-radius: 50%;
+    box-shadow: 6px 1px 1px 1px #CB3E00;
+
+}
+
+/* course navbar */
+
+.navbar {
+    background-color: #CB3E00;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+    color: #fff;
+}
+.navbar a.active {
+    background-color: #ffffff;
+    color:#CB3E00; 
+    box-shadow: 0 0 12px  #762503;
+
+}
+.languageDescriptionContainer{
+    padding-left: 20vh;
+    height: 70vh;
+    overflow: hidden;
+
+}
+.description-container {
+    padding: 10vh;
+    width: 170vh;
+    height: 65vh;
+    background-color: #ffffff;
+    color: #000000;
+    font-size:2.5vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.249);
+}
+#languageDESIMG{
+    background-color: #CB3E00;
+    overflow: hidden;
+    
+}
+/*courses over*/
+
+/* card container */
+.section2{
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    position: relative;
+    top: 15%;
+    display: flex;
+    justify-content:space-evenly;
+    overflow:auto; 
+    transition: transform 0.3s ease;
+    scroll-behavior:smooth;
+
+}
+.card {
+    background-color: #CB3E00;
+    color: #fff;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-shadow: 1px  4px 8px rgba(0, 0, 0, 0.187);
+    transition: all 0.61s ease-in-out ;
+}
+.card:hover{
+    height: 400px;
+    
+}
+.card p{
+    font-size: small;
+    text-align: left;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* card container over */
+
+/*scholorship*/
+.section3{
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content{
+    height: 100%;
+    width: 100%;
+    padding: 5vw 4vw;
+    
+}
+.left-content h1{
+    font-size: 3.9vw;
+    line-height: 4.4vw;
+    font-weight: 900;
+}
+.left-content h1 span{
+    color: #CB3E00;
+}
+.left-content p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: rgb(73, 72, 72);
+    width: 100%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+
+
+/*end scholorship*/
+
+/*certificate*/
+.section4 img{
+    width: 800px;
+    height: 450px;
+    margin-left: 20%;
+    filter: blur(1px);
+
+}
+
+.certify span{
+    font-size: 30px;
+}
+
+/* Styles for the footer */
+/* Footer styles */
+.footer {
+    background-color: #232222;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.address {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.address p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.address p span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.col-md-3 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.col-md-3 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.col-md-3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col-md-3 ul li {
+    margin-bottom: 10px;
+}
+
+.col-md-3 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.col-md-3 ul li a:hover {
+    color: #d9d6d6;
+}
+
+/* Responsive area*/
+@media (max-width:600px) {
+    nav{
+        height: 60px;
+        padding: 0 6vw;
+    }
+    nav h2{
+        font-size: 5vw;
+    }
+    nav h4{
+        font-size: 5vw;
+        display: block;
+    }
+    nav i{
+        width: auto;
+        display: block;
+    }
+
+    nav i:hover{
+        display: block;
+    }
+    nav button{
+        display: block;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+        display: flex;
+        position: relative;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+        font-size: 3.3vh;
+        padding:50px;
+    }
+    .left h1{
+        font-size: 7.9vw;
+        line-height: 5.4vw;
+    }
+    .left h1 span{
+        color: #CB3E00;
+    }
+    .left p{
+        font-size: 2.5vw;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        width: 80%;
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+        background:black;
+    }
+    .right{
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+    .description-container {
+        width: 100%;
+        max-height: 100%;
+        font-size:3.5vh;
+        padding: 1vh;
+
+    }
+    .languageDescriptionContainer{
+        width: 100%;
+        height: 100%;
+        max-height: 70%;
+        padding: 2vh;
+        display: flex;
+    }
+    .section3{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .left-content{
+        height: 100%;
+        width: 100%;
+        padding: 5vw 4vw;
+        
+    }
+    .left-content h1,.left-content span{
+        font-size: 8.9vw;
+        padding-top: 25px;
+    }
+
+    .left-content p{
+        padding: 3px;
+        font-size: 3.2vh;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+    }
+    button{
+        font-size: 5.1vw;
+        padding: 1vw 2vw;
+        background-color: #CB3E00;
+        color: aliceblue;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+    }
+    /*certificate*/
+    .section4 img{
+        width: 45vh;
+        height: 40vh;
+        overflow: hidden;
+        display: flex;
+    }
+    .certify span{
+        position: relative;
+        font-size: larger;
+        left: 50%;        
+    }
+    .footer{
+        width: 100%;
+        height: 620px;
+        background-color: #2f2e2ec4;
+    }
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+

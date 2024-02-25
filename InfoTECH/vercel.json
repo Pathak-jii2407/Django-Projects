@@ -1,0 +1,31 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "InfoTECH/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "55mb", 
+          "runtime": "Python 3.11.8"  
+        }
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "STATICFILES_DIRS"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "InfoTECH/wsgi.py"
+      }
+    ]
+  }
+  
